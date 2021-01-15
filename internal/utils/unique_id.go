@@ -15,7 +15,7 @@ const (
 
 var src = rand.NewSource(time.Now().UnixNano())
 
-func generateUniqueID() string {
+func GenerateUniqueID() string {
 	n := 10
 	b := make([]byte, n)
 	// A src.Int63() generates 63 random bits, enough for letterIdxMax characters!
